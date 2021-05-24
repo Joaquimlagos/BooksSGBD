@@ -1,10 +1,10 @@
-const mysql = require('mysql');
-const knex = require("knex");
+//const mysql = require('mysql2');
+const knex = require('knex');
 
 require("dotenv").config();
 
 const db = knex({
-  client: 'mysql',
+  client: 'mysql2',
   connection: {
     host: process.env.HOST,
     user: process.env.USUARIO,

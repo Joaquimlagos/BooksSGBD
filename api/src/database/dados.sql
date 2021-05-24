@@ -84,5 +84,5 @@ UNLOCK TABLES;
 
 -- Dump completed on 2020-05-06 16:38:46
 
-CREATE USER 'senai_sads'@'localhost' IDENTIFIED BY 'senai_sads';
+-- CREATE USER 'senai_sads'@'%' IDENTIFIED BY 'senai_sads';
 GRANT SELECT, INSERT, UPDATE, DELETE ON sads_bookstore.* TO 'senai_sads'@'%';
