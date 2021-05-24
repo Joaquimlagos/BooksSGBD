@@ -1,10 +1,11 @@
 const queryBooks = require("../service/queryBooks");
-const queryAuthors = require("../service/queryAuthors");
 
 class BookController {
-  consulting(req, res) {
-    const booksQuery = queryBooks(req,res);
-    const authorsQuery = queryAuthors(req,res);
+  async consulting(req, res) {
+    const booksQuery = await queryBooks();
+    return res.status(200).json({
+      Response: booksQuery 
+    });
   }
 }
 module.exports = BookController;
