@@ -5,7 +5,6 @@
 Este é um projeto desenvolvido para a UC de **Programação para web**.
 
 O objetivo do projeto é desenvolver um Web service RESTful onde o programa deve fazer uma requisição GET, e então o servidor deve fazer uma requisição para o banco de dados para coletar os dados em JSON.
- Foi escolhido para conexão com o banco de dados o query builder KNEX
 
 ------
 
