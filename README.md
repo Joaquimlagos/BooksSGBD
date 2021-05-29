@@ -5,7 +5,7 @@
 Este é um projeto desenvolvido para a UC de **Programação para web**.
 
 O objetivo do projeto é desenvolver um Web service RESTful onde o programa deve fazer uma requisição GET, e então o servidor deve fazer uma requisição para o banco de dados para coletar os dados em JSON.
-    Programa cliente (front-end), deve conter uma página que, quando carregada, apresente uma
+    Programa cliente (front-end), deve conter uma página que quando carregada, apresente uma
 tabela com os livros cadastrados no SGBD
 
 ------
@@ -20,9 +20,9 @@ A lista de livros deve ser ordenada pelo campo year.
 
 Nesta atividade, para o programa servidor se comunicar com o SGBD, você pode escolher entre:
 
-Utilizar o driver padrão: mysql
-Utilizar o query builder: knex
-Utilizar o ORM: sequelize
+- Utilizar o driver padrão: mysql
+- Utilizar o query builder: knex
+- Utilizar o ORM: sequelize
 
 O programa foi desenvolvido com o query builder KNEX
 
