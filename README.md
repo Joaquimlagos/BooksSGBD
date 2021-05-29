@@ -26,9 +26,9 @@ Utilizar o ORM: sequelize
 
 O programa foi desenvolvido com o query builder KNEX
 
-
 O programa cliente deve fazer uma requisição assíncrona para o Web service RESTful criado,
 pode ser desenvolvido com um documento HTML simples, com código JavaScript embutido ou com react
+
 ------
 
 ## Tecnologias utilizadas 💻
