@@ -57,6 +57,18 @@ $ yarn install
 # ou
 $ npm install
 
+# Agora para que a aplicação funcione você deve configurar o Banco de Dados
+
+# Após configurar o Banco de Dados basta mover-se para /BooksSGBD/api/src
+$ cd ..
+
+$ pwd # Verifique que você esta em /BooksSGBD/api/src
+
+# Após ter o Back-end e o Banco de Dados configurados basta executar
+$ yarn start 
+# ou
+$ npm start
+
 ```
 ------
 
@@ -67,7 +79,7 @@ $ npm install
 
 $ sudo apt install mysql-server
 
-# Para que o mysql já crie o banco de dados que foi fornecido em aula
+# Para que o mysql crie o banco de dados 
 # Mova se para a pasta database 
 
 $ cd /BooksSGBD/api/src/database
@@ -75,17 +87,6 @@ $ cd /BooksSGBD/api/src/database
 # Então execute o comando
 
 $ sudo mysql < dados.sql
-
-# Agora mova se para pasta do servidor back-end (certifique-se que você esteja na pasta src)
-
-$ cd ..
-
-$ pwd # Verifique que você esta em /BooksSGBD/api/src
-
-# Agora execute com o comando 
-$ yarn start 
-# ou
-$ npm start
 
 ```
 
