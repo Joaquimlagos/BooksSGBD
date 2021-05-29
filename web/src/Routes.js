@@ -8,7 +8,6 @@ const Routes = () => {
     return(
         <Router>
             <Route path = "/books" component = {booksPage} />
-            <Route path = "/" component = {booksPage} />
         </Router>
     )
 }

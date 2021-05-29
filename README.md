@@ -5,7 +5,7 @@
 Este é um projeto desenvolvido para a UC de **Programação para web**.
 
 O objetivo do projeto é desenvolver um Web service RESTful onde o programa deve fazer uma requisição GET, e então o servidor deve fazer uma requisição para o banco de dados para coletar os dados em JSON.
-    Programa cliente (front-end), deve desenvolver uma página que, quando carregada, apresenta uma
+    Programa cliente (front-end), deve conter uma página que, quando carregada, apresente uma
 tabela com os livros cadastrados no SGBD
 
 ------
@@ -125,4 +125,11 @@ $ npm start
 ------
 
 ## Como testar o projeto front-end💡
- Após executar o comando npm start na pasta do front end, irá abrir uma aba no navegador em localhost:3000, então será renderizado a tabela com os dados fornecidos pelo banco de dados
+ Após executar o comando
+
+ ```bash
+ $ npm start
+ ```
+na pasta do front end, irá abrir uma aba no navegador em localhost:3000, você deve complementar a URL inserindo "/books", ex: localhost:3000/books
+
+ então será renderizado a tabela com os dados fornecidos pelo banco de dados
