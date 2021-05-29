@@ -1,11 +1,6 @@
 const db = require('../database/index');
 
 async function queryBooks() {
-  const result = {
-    data: null,
-    error: false,
-    message: ""
-  }
 
   try {
     const booksResult = await db('author')
@@ -13,14 +8,12 @@ async function queryBooks() {
       .select('book.title', 'book.year', 'book.price', 'author.first_name', 'author.last_name')
       .orderBy('book.year', 'asc');
 
-    result.data = booksResult;
-    result.message = "Consulta feita com sucesso";
+    return booksResult;
 
   } catch (error) {
-    result.error = true;
-    result.message = error;
+   console.log(error);
   }
-
+  const result = booksResult;
   return result;
 }
 

@@ -1,28 +1,46 @@
-import React, {useEffect, useState} from 'react';
-import api from '../../service/apiService';
+import React, { useEffect, useState } from "react";
+import apiService from "../../service/apiService";
+import "./index.css";
 
 const BooksPage = () => {
+  const [books, setBooks] = useState([]);
 
-    const [books, setBooks] = useState([]);
+  async function getBooks() {
+    try {
+      const response = await apiService.get("/books");
+      console.log(response.data.Response);
+      setBooks(response.data.Response);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(() => {
+    getBooks();
+  }, []);
 
-    useEffect(async () => { 
-        try {
-            const response = await api.get('/books');
-    
-            if(response.status == 200){
-                setBooks(response.Response.data)
-                console.log(response)
-            }
-        } catch (error) {
-            console.log('faleceu')
-        }
-    }, []);
-
-    return (  
-        <div>
-            <p>{books}</p>
-        </div>
-    )
-}
-
+  return (
+    <div>
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>year</th>
+          <th>price</th>
+          <th>first_name</th>
+          <th>last_name</th>
+        </tr>
+        {books.map((book) => {
+          return (
+            <tr>
+              <th>{book.title}</th>
+              <th>{book.year}</th>
+              <th>{book.price}</th>
+              <th>{book.first_name}</th>
+              <th>{book.last_name}</th>
+            </tr>
+          );
+        })}
+      </table>
+    </div>
+  );
+};
 export default BooksPage;
